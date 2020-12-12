@@ -52,9 +52,21 @@ Api = '/api'
 InputFile = ''
 Path = '/home/pi/api/'
 LogFile = Path + 'rest_client.log'
-Port = 9080
 Secure = 'http://'
-Server = 'security.local'
+
+#########################
+#
+# edit these parameters to match your settings
+# replace the angle brackets with a port number, say 9080 or 9443
+# 
+Port = <your-port-number>
+#
+# the server name is either hostname.local or just hostname
+# Server = '<hostname>.local'
+Server = '<hostname>'
+#
+#########################
+
 Use_cert = False
 # these files are generated on the server-side raspberry pi and copied to this server using scp
 ClientKeyFile = Path + 'client.key'
