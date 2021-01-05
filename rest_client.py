@@ -51,6 +51,7 @@ urllib3.disable_warnings(urllib3.exceptions.SecurityWarning)
 Api = '/api'
 InputFile = ''
 Path = '/home/pi/api/'
+CertsPath = '/home/pi/certs/'
 LogFile = Path + 'rest_client.log'
 Secure = 'http://'
 
@@ -69,9 +70,9 @@ Server = '<hostname>'
 
 Use_cert = False
 # these files are generated on the server-side raspberry pi and copied to this server using scp
-ClientKeyFile = Path + 'client.key'
-ServerCertFile = Path + 'server.crt'
-ClientCertFile = Path + 'client.crt'
+ClientKeyFile = Path + 'client-key.pem'
+ServerCertFile = Path + 'server-crt.pem'
+ClientCertFile = Path + 'client-crt.pem'
 
 
 #########################
